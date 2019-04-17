@@ -1,0 +1,22 @@
+{% extends "shell.html" %}
+
+{% block content %}
+  {% filter markdown %}
+    ### The Relationship Between Receiver Route Selection and Receiver Selection by the Quarterback
+  {% endfilter %}
+  <div id="RouteVizContainer">
+  </div>
+{% endblock content %}
+
+
+{% block lazyScript %}
+  <script src="{{ url_for('static',filename='js/tableau-2.min.js')}}"></script>
+  <script>
+    function initViz(){
+      var containerDiv = document.getElementById("RouteVizContainer"),
+      url="https://public.tableau.com/shared/FYRSY8542?:display_count=yes"
+
+    }
+  </script>
+
+{% endblock lazyScript %}

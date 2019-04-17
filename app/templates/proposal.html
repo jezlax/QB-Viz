@@ -1,0 +1,19 @@
+{% extends "shell.html" %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-4">
+      Video Proposal:
+      <div class="embed-responsive embed-responsive-16by9">
+        <video  class="embed-responsive-item" id="proposalVideo" src="{{ url_for('static',filename='media/team42proposal.mov') }}"
+        height="400"   controls>
+        </video>
+      </div><br>
+    </div>
+  </div>
+<div class="row-clearfix"></div>
+  <div >
+    {{ prop|markdown }}
+  </div>
+
+{% endblock content %}
