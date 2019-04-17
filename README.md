@@ -1,13 +1,18 @@
-# QB-Viz: The Instructions
+# __QB-Viz: The Instructions__    :shipit::shipit::shipit:
 
 ### Activate the Virtual Environment
 Navigate to the QB-Viz directory in the command line
-run `qbvenv\Scripts\Activate`
+run `C:\...\QB-Viz> qbvenv\Scripts\Activate `
 
 ### Set Environment Variables
 With the Virtual Environment Active:
-- run `set FLASK_APP=qbviz.py`
-- run `flask run`
+- run:
+
+>`(qbvenv) C:\...\QB-Viz> cd app`
+>
+>`(qbvenv) C:\...\QB-Viz\app> set FLASK_APP=qbviz.py`
+>
+>`(qbvenv) C:\...\QB-Viz\app> flask run `
 
 ### A local server should start at http://localhost:500 which will render the app
 
